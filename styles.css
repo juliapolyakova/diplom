@@ -1,0 +1,398 @@
+@font-face {
+    font-family: OpenSans;
+    src: url("..\fonts\OpenSans-Regular.woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: OpenSans;
+    src: url("..\fonts\OpenSans-Bold.woff");
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  * {
+    margin: 0; 
+    padding: 0;
+  }
+  
+  html {
+    font-size: 62.5%;
+  }
+  
+  body {
+    font-family: OpenSans;
+    width: 320px;
+    
+   }
+  
+  .header {
+    height: 100vh;
+    position: relative;
+    
+    background-image: url("..\images\football_767.jpg");
+    background-color: #161638;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .header::after {
+    content: "";
+    background-color: #0a0e34;
+    opacity: 0.9;
+    
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+  }
+  
+  .header_container {
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    padding-left: 1.5rem; 
+    padding-right: 1.5rem;
+    max-width: 100%;
+  }
+  
+  .logo_text {
+    width: 133px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 3rem;
+    display: block;
+  }
+  
+  .title {
+    display: block;
+    margin-top: 13rem;
+  }
+  
+  .header_title, .header_title_play {
+    font-family: OpenSans;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.8rem;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  
+  .header_title_play {
+    padding-left: 4.5rem;
+    display: block;
+  }
+  
+  .apps {
+    display: block;
+    margin-top: 8.8rem;
+  }
+  
+  .appstore, .google_play {
+    box-sizing: border-box;
+    width: 280px;
+    height: 35px;
+    margin-bottom: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.5rem;
+    padding-left: 110px;
+    border: 1px solid #5e42b0;
+    background-color: #5e42b0;
+    border-radius: 20px;
+  }
+  
+  .appstore_content, .google_play_content  {
+    position: relative;
+  }
+   
+  .appstore_logo, .google_play_logo {
+    position: absolute;
+    width: 20px;
+    top: 5%;
+    left: -15%;
+    fill: #ffffff;
+  }
+  
+  .appstore_text, .google_play_text {
+    display: block;
+    font-family: OpenSans;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 0.8rem;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  
+  .appstore_place, .google_play_place {
+    display: block;
+    font-family: OpenSans;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 0.8rem;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+   
+  a {
+    text-decoration: none;
+  }
+  
+  .subtitle {
+    display: flex;
+  }
+  
+  .athlets {
+    background-image
+  }
+  
+  .athlets_title, .players_title {
+    padding: 2rem 1.5rem;
+    font-family: OpenSans;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 5rem;
+    color: #e7e7e7;
+    text-transform: uppercase;
+  }
+  
+  .connection_content, .collaboration_content, .athlets_growth_content, .players_growth_content {
+    padding: 5.5rem 1.5rem;  
+  }
+  
+  .connection_title, .collaboration_title, .athlets_growth_title, .players_growth_title {
+    margin-top: 0;
+    margin-bottom: 2.7rem;
+    font-family: OpenSans;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.3rem;
+    color: #c1c1c1;
+    text-transform: uppercase;
+  }
+  
+  .connection_text, .collaboration_text, .athlets_growth_text, .players_growth_text {
+    margin-top: 0;
+    font-family: OpenSans;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.5rem;
+    /*line-height: 18px;*/
+  }
+  
+  .connection_text, .collaboration_text {
+    color: #000000;
+  }
+  
+  .athlets_growth_content {
+    background-color: #5e42b0;
+  } 
+  
+  .athlets_growth_text, .players_growth_text {
+    color: #ffffff;
+  }
+  
+  .connection_count, .collaboration_count {
+    margin-right: 1rem;
+    padding-top: 0.4rem;
+    font-family: OpenSans;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.4rem;
+    color: #000000;
+  }
+  
+  .connection_count::after, .collaboration_count::after {  
+    content: "";
+    display: block;
+    width: 15px;
+    border: 2px solid #5e42b0;
+    border-radius: 2px;
+  }
+  
+  .players_growth_content {
+    background-color: #090c35;
+  }
+  
+  .athlets_growth_count, .players_growth_count {
+    margin-right: 1rem;
+    padding-top: 0.4rem;
+    font-family: OpenSans;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.4rem;
+  }
+  
+  .athlets_growth_count {
+    color: #000000;
+  }
+  
+  .players_growth_count {
+      color: #8765dd;
+  }
+  
+  .athlets_growth_count::after, .players_growth_count::after {
+    content: "";
+    display: block;
+    width: 15px;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+  }
+  
+  .container_action {
+    align-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 210px;
+  }
+  
+  .photo {
+    max-width: 100%;
+  }
+  
+  .be_active, .find_contact, .work_it {
+    padding-left: 1.5rem;
+    min-height: 210px;
+  }
+  
+  .card_subtitle {
+    position: relative;
+  }
+  
+  .number {
+    position: absolute;
+    background-color: #5e42b0;
+    width: 7rem;
+    height: 7rem;
+    top: -6rem;
+  }
+  
+  .card_count {
+    position: absolute;
+    top: 2rem;
+    left: 2.5rem;
+    font-family: OpenSans;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 1.4rem;
+    color: #ffffff;
+    
+  }
+  
+  .card_count::after {
+    content: "";
+    display: block;
+    width: 15px;
+    border: 2px solid #8f7bc8;
+    border-radius: 2px;
+  }
+  
+  .card_title {
+    margin-top: 3rem;
+    margin-bottom: 2rem;
+    font-family: OpenSans;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 2.8rem;
+    color: #e7e7e7;
+    text-transform: uppercase;
+  }
+  
+  .card_text {
+    font-family: OpenSans;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.6rem;
+    color: #000000;
+  }
+  
+  .footer {
+    height: 100vh;
+    position: relative;
+    
+    background-image: url("..\images\game_767.jpg");
+    background-color: #161638;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .footer::after {
+    content: "";
+    background-color: #0a0e34;
+    opacity: 0.9;
+    
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+  }
+  
+  .container_apps {
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 10rem;
+    padding-bottom: 1rem;
+    
+   /* display: flex;
+    flex-wrap: wrap;*/
+    box-sizing: border-box;
+    /*max-width: 100%;*/
+  }
+  
+  .apps_footer {
+    padding-bottom: 5rem;
+  }
+  
+  .apps_title {
+    text-align: center;
+    padding-top: 5.8rem;
+    padding-bottom: 7rem;
+  }
+  
+  .apps_action {
+    display: block;
+    font-family: OpenSans;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 3.2rem;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  
+  .apps_text {
+    display: block;
+    font-family: OpenSans;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.4rem;
+    color: #9b8ec1;
+    text-transform: uppercase;
+  }
+  
+  
+  .logo {
+    width: 6rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 0.5rem;
+    display: block;
+    fill: #ffffff;
+  }
+  
+  .logo_frame {
+    margin-left: auto;
+    margin-right: auto;
+    width: 7rem;
+    height: 7rem;
+    background-color: #7050cc;
+    border-radius: 20%;
+  }
+  
