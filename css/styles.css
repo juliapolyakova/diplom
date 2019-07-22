@@ -25,7 +25,7 @@
     height: 100%;
     position: relative;
     
-    background-image: url("../images/football_767.jpg");
+    background-image: url("images/football_767.jpg");
     background-color: #161638;
     background-repeat: no-repeat;
     background-size: cover;
@@ -317,7 +317,7 @@
     height: 100%;
     position: relative;
     
-    background-image: url("../images/game_767.jpg");
+    background-image: url("images/game_767.jpg");
     background-color: #161638;
     background-repeat: no-repeat;
     background-size: cover;
@@ -398,13 +398,13 @@
   
   @media (min-width: 768px) and (max-width: 1280px) {
     .header {
-      background-image: url("../images/football_1280.jpg");
+      background-image: url("images/football_1280.jpg");
     }
   }
   
   @media (min-width: 1281px) {
     .header {
-      background-image: url("../images/football_1920.jpg");
+      background-image: url("images/football_1920.jpg");
     }
   }
   
