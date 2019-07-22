@@ -1,0 +1,699 @@
+@font-face {
+    font-family: OpenSans;
+    src: url("fonts/OpenSans-Regular.woff");
+    font-weight: 400;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: OpenSans;
+    src: url("fonts/OpenSans-Bold.woff");
+    font-weight: 700;
+    font-style: normal;
+  }
+  
+  * {
+    margin: 0; 
+    padding: 0;
+  }
+  
+  body {
+    font-family: OpenSans;  
+   }
+  
+  .header {
+    height: 100%;
+    position: relative;
+    
+    background-image: url("images/football_767.jpg");
+    background-color: #161638;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .header::after {
+    content: "";
+    background-color: #0a0e34;
+    opacity: 0.9;
+    
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+  }
+  
+  .header_container {
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    padding-left: 4.5%; 
+    padding-right: 4.5%;
+    max-width: 100%;
+  }
+  
+  .logo_text {
+    width: 133px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    display: block;
+  }
+  
+  .title {
+    display: block;
+    margin-top: 40.6%;
+  }
+  
+  .header_title, .header_title_play {
+    font-family: OpenSans;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  
+  .header_title_play {
+    padding-left: 45px;
+    display: block;
+  }
+  
+  .apps {
+    display: block;
+    margin-top: 88px;
+    margin-bottom: 83px;
+  }
+  
+  .appstore, .google_play {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 280px;
+    margin-bottom: 15px;
+    border: 1px solid #5e42b0;
+    background-color: #5e42b0;
+    border-radius: 20px;
+    position: relative;
+  }
+   
+  .appstore_logo, .google_play_logo {
+    position: absolute;
+    width: 20px;
+    top: 15%;
+    left: 30%;
+    fill: #ffffff;
+  }
+  
+  .button_appstore {
+     margin-left: 20px;
+  }
+  
+  .appstore_text, .google_play_text {
+    display: block;
+    font-family: OpenSans;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 8px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  
+  .appstore_place, .google_play_place {
+    display: block;
+    font-family: OpenSans;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 8px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+   
+  a {
+    text-decoration: none;
+  }
+  
+  .subtitle {
+    display: flex;
+  }
+  
+  .athlets_photo, .players_photo {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  
+  .athlets_title, .players_title {
+    padding: 20px 15px;
+    font-family: OpenSans;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 50px;
+    color: #e7e7e7;
+    text-transform: uppercase;
+  }
+  
+  .connection_title, .collaboration_title, .athlets_growth_title, .players_growth_title {
+    margin-top: 0;
+    margin-bottom: 27px;
+    font-family: OpenSans;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 23px;
+    color: #c1c1c1;
+    text-transform: uppercase;
+  }
+  
+  .connection {
+    padding: 26px 15px;  
+  }
+  
+  .collaboration, .athlets_growth, .players_growth {
+    padding: 55px 15px;  
+  }
+  
+  .connection_text, .collaboration_text, .athlets_growth_text, .players_growth_text {
+    margin-top: 0;
+    font-family: OpenSans;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 15px;
+  }
+  
+  .connection_text, .collaboration_text {
+    color: #000000;
+  }
+  
+  .athlets_growth {
+    background-color: #5e42b0;
+  } 
+  
+  .athlets_growth_text, .players_growth_text {
+    color: #ffffff;
+  }
+  
+  .connection_count, .collaboration_count {
+    margin-right: 10px;
+    padding-top: 4px;
+    font-family: OpenSans;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    color: #000000;
+  }
+  
+  .connection_count::after, .collaboration_count::after {  
+    content: "";
+    display: block;
+    width: 14px;
+    border: 2px solid #5e42b0;
+    border-radius: 2px;
+  }
+  
+  .players_growth {
+    background-color: #090c35;
+  }
+  
+  .athlets_growth_count, .players_growth_count {
+    margin-right: 10px;
+    padding-top: 4px;
+    font-family: OpenSans;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+  }
+  
+  .athlets_growth_count {
+    color: #000000;
+  }
+  
+  .players_growth_count {
+      color: #8765dd;
+  }
+  
+  .athlets_growth_count::after, .players_growth_count::after {
+    content: "";
+    display: block;
+    width: 14px;
+    border: 2px solid #ffffff;
+    border-radius: 2px;
+  }
+  
+  .container_action {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 210px;
+  }
+  
+    .photo {
+    max-width: 100%;
+  }
+  
+  .be_active, .find_contact, .work_it {
+    padding-left: 15px;
+    min-height: 210px;
+  }
+  
+  .card {
+    position: relative;
+    box-sizing: border-box;
+  }
+  
+  .number {
+    position: absolute;
+    background-color: #5e42b0;
+    width: 70px;
+    height: 70px;
+    top: -60px;
+  }
+  
+  .card_count {
+    position: absolute;
+    top: 20px;
+    left: 25px;
+    font-family: OpenSans;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 14px;
+    color: #ffffff;
+    
+  }
+  
+  .card_count::after {
+    content: "";
+    display: block;
+    width: 15px;
+    border: 2px solid #8f7bc8;
+    border-radius: 2px;
+  }
+  
+  .card_title {
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-family: OpenSans;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 28px;
+    color: #e7e7e7;
+    text-transform: uppercase;
+  }
+  
+  .card_text {
+    font-family: OpenSans;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 16px;
+    color: #000000;
+  }
+  
+  .footer {
+    height: 100%;
+    position: relative;
+    
+    background-image: url("images/game_767.jpg");
+    background-color: #161638;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+  }
+  
+  .footer::after {
+    content: "";
+    background-color: #0a0e34;
+    opacity: 0.9;
+    
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    left: 0;
+  }
+  
+  .container_apps {
+    margin: auto;
+    position: relative;
+    z-index: 2;
+    padding-left: 4.6%;
+    padding-right: 4.6%;
+    padding-top: 31.2%;
+    padding-bottom: 3%;
+    box-sizing: border-box;
+  }
+  
+  .apps_footer {
+    margin-bottom: 25%;
+  }
+  
+  .apps_title {
+    text-align: center;
+    margin-top: 18%;
+    margin-bottom: 21.8%;
+  }
+  
+  .apps_action {
+    display: block;
+    font-family: OpenSans;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 32px;
+    color: #ffffff;
+    text-transform: uppercase;
+  }
+  
+  .apps_text {
+    display: block;
+    font-family: OpenSans;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    color: #9b8ec1;
+    text-transform: uppercase;
+  }
+  
+  
+  .logo {
+    width: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 5px;
+    display: block;
+    fill: #ffffff;
+  }
+  
+  .logo_frame {
+    margin-left: auto;
+    margin-right: auto;
+    width: 71px;
+    height: 75px;
+    background-color: #7050cc;
+    border-radius: 20%;
+  }
+  
+  @media (min-width: 768px) and (max-width: 1280px) {
+    .header {
+      background-image: url("images/football_1280.jpg");
+    }
+  }
+  
+  @media (min-width: 1281px) {
+    .header {
+      background-image: url("images/football_1920.jpg");
+    }
+  }
+  
+  
+  @media (min-width: 641px) {
+    .header_container {
+      padding-left: 0; 
+      padding-right: 0;
+   }
+    
+    .appstore, .google_play {
+      height: 75px;
+      width: 312px;
+      margin-bottom: 15px;
+      border: 1px solid #5e42b0;
+      border-radius: 50px;
+    }
+    
+    .appstore_logo, .google_play_logo {
+      width: 40px;
+      left: 15%;
+      top: 20%;
+    }
+    
+    .button_appstore {
+      margin-left: 20px;
+    }
+    
+    .appstore_text, .google_play_text, .appstore_place, .google_play_place {
+      font-size: 14px;
+    }
+    
+    .logo_text {
+      width: 208px;
+      padding-top: 42px;
+    }
+    
+    .athlets, .players {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .athlets_title, .players_title {
+      font-size: 80px;
+    }
+      
+    .connection_count, .collaboration_count, .athlets_growth_count, .players_growth_count {
+      padding-top: 6px;
+      font-size: 18px;
+    }
+  
+    .connection_count::after, .collaboration_count::after, .athlets_growth_count::after, .players_growth_count::after {
+      width: 20px;
+      border-radius: 2px;
+    }
+    
+    .logo {
+      width: 102px;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 20px;
+    }
+  
+    .logo_frame {
+      margin-left: auto;
+      margin-right: auto;
+      width: 131px;
+      height: 137px;
+    }
+    
+    .apps_action {
+      font-size: 80px;
+    }
+    
+    .container_apps {
+      padding-left: 0;
+      padding-right: 0;
+    }
+    
+  }
+  
+  @media (min-width: 641px) and (max-width: 960px) {
+    .title {
+      margin-top: 23.3%;
+    }
+    
+    .header_title, .header_title_play {
+      font-size: 64px;
+    }
+    
+    .header_title {
+      padding-left: 11%;
+    }
+    
+    .header_title_play {
+      padding-left: 25%;
+    }
+      
+    .apps, .apps_footer {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .appstore + .google_play {
+      margin-left: 30px;
+    }
+    
+    .apps_title {
+      margin-bottom: 36.4%;
+    }
+    
+    .apps_footer {
+      margin-bottom: 7.6%;
+    }
+  
+    .right_column {
+      padding-left: 38%;
+      padding-right: 5%;
+    }
+    
+    .left_column, .players_content {
+      padding-left: 4%;
+      padding-right: 39%;
+    }
+    
+    .athlets, .players {
+      position: relative;
+      font-size: 16px;
+    }
+    
+    .athlets_photo {
+      position: absolute;
+      left: 0;
+    }
+    
+    .players_photo {
+      position: absolute;
+      right: 0;
+    }
+    
+    .connection_title, .collaboration_title, .athlets_growth_title, .players_growth_title {
+      margin-bottom: 3.9%;
+      font-size: 32px;
+     }
+    
+    .athlets_content {
+      padding-left: 38%;
+      padding-right: 5%;
+    }
+  
+    .connection_text, .collaboration_text, .athlets_growth_text, .players_growth_text {
+      font-size: 18px;
+    }
+      
+    .apps_text {
+      font-size: 36px;  
+    }
+      
+  }
+   
+  @media (min-width: 961px) {
+    .title {
+      margin-top: 15.3%;
+    }
+    
+    .header_title {
+      padding-left: 10%;
+    }
+    
+    .header_title_play {
+      padding-left: 32%;
+    }
+    
+    .header_title, .header_title_play {
+      font-size: 90px;
+    }
+    
+    .apps, .apps_footer {
+      display: flex;
+      justify-content: center;
+    }
+    
+    .appstore + .google_play {
+      margin-left: 50px;
+    }
+      
+    .appstore_logo, .google_play_logo {
+      width: 40px;
+      left: 15%;
+      top: 20%;
+    }
+  
+    .appstore_text, .google_play_text, .appstore_place, .google_play_place {
+      font-size: 14px;
+    }
+    
+    .apps_title {
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+    
+    .apps_footer {
+      margin-bottom: 13%;
+      margin-top: 7.8%;
+    }
+    
+    .athlets_photo {
+      position: absolute;
+      left: 0;
+      top: 28px;
+    }
+    
+    .players_photo {
+      position: absolute;
+      top: 28px;
+      right: 0;
+    }
+    
+    .athlets, .players {
+      position: relative;
+      font-size: 20px;
+    }
+    
+     .connection_title, .collaboration_title, .athlets_growth_title, .players_growth_title {
+      margin-bottom: 1.6%;
+      font-size: 36px;
+     }
+    
+    .connection_text, .collaboration_text, .athlets_growth_text, .players_growth_text {
+      font-size: 20px;
+    }
+    
+    .right_column {
+      padding-left: 52%;
+      padding-right: 13%;
+      padding-top: 3%;
+      padding-bottom: 2.6%;
+    }
+    
+    .athlets_content {
+      padding-left: 52%;
+      padding-right: 13%;
+    }
+    
+    .left_column, .players_content {
+      padding-left: 10%;
+      padding-right: 50%;
+    }
+    
+    .card {
+      width: 50%;    
+    }
+    
+    .number {
+      top: 20px;
+      left: -40px;
+    }
+    
+    .footer_title {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-left: 0;
+      margin-right: 0;
+    }
+    
+    
+    .logo_frame + .apps_title {
+      margin-left: 35px;
+      text-align: left;
+    }
+    
+    .container_apps {
+      padding-top: 11.8%;
+      padding-bottom: 3%;
+      box-sizing: border-box;
+  }
+    
+    .apps_action {
+      font-size: 80px;
+    }
+  
+    .apps_text {
+      font-size: 30px;  
+    }
+  
+    .logo_frame {
+      margin: 0;
+  }
+    
+  }
+  
