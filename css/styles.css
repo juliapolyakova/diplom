@@ -54,11 +54,11 @@
   }
   
   .logo_text {
+    display: block;
     width: 133px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 30px;
-    display: block;
   }
   
   .title {
@@ -91,15 +91,16 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    position: relative;
+    
     margin-right: auto;
     margin-left: auto;
+    margin-bottom: 15px;
     height: 35px;
     width: 280px;
-    margin-bottom: 15px;
     border: 1px solid #5e42b0;
     background-color: #5e42b0;
     border-radius: 20px;
-    position: relative;
   }
    
   .appstore_logo, .google_play_logo {
@@ -161,6 +162,7 @@
   .connection_title, .collaboration_title, .athlets_growth_title, .players_growth_title {
     margin-top: 0;
     margin-bottom: 27px;
+    
     font-family: OpenSans;
     font-weight: 700;
     font-style: normal;
@@ -193,6 +195,10 @@
     background-color: #5e42b0;
   } 
   
+  .collaboration {
+    background-color: #f6f5fa;
+  }
+  
   .athlets_growth_text, .players_growth_text {
     color: #ffffff;
   }
@@ -200,6 +206,7 @@
   .connection_count, .collaboration_count {
     margin-right: 10px;
     padding-top: 4px;
+    
     font-family: OpenSans;
     font-weight: 700;
     font-style: normal;
@@ -219,9 +226,14 @@
     background-color: #090c35;
   }
   
+  .collaboration_players {
+    background-color: #f6f6f6;
+  }
+  
   .athlets_growth_count, .players_growth_count {
     margin-right: 10px;
     padding-top: 4px;
+    
     font-family: OpenSans;
     font-weight: 700;
     font-style: normal;
@@ -233,7 +245,7 @@
   }
   
   .players_growth_count {
-      color: #8765dd;
+    color: #8765dd;
   }
   
   .athlets_growth_count::after, .players_growth_count::after {
@@ -244,48 +256,40 @@
     border-radius: 2px;
   }
   
-  .container_action {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-    align-items: center;
-    display: flex;
-    flex-wrap: wrap;
+  .card_content {
     min-height: 210px;
+    padding-left: 15px;
   }
-  
     .photo {
     max-width: 100%;
   }
-  
-  .be_active, .find_contact, .work_it {
-    padding-left: 15px;
-    min-height: 210px;
-  }
-  
   .card {
-    position: relative;
     box-sizing: border-box;
   }
   
-  .number {
+  .card_img {
+    position: relative;
+  }
+  
+  .number, .number_left {
     position: absolute;
-    background-color: #5e42b0;
     width: 70px;
     height: 70px;
-    top: -60px;
+    top: 85%;
+    left: 10%;
+    background-color: #5e42b0;
   }
   
   .card_count {
     position: absolute;
     top: 20px;
     left: 25px;
+    
     font-family: OpenSans;
     font-weight: 700;
     font-style: normal;
     font-size: 14px;
     color: #ffffff;
-    
   }
   
   .card_count::after {
@@ -297,8 +301,9 @@
   }
   
   .card_title {
-    margin-top: 30px;
-    margin-bottom: 20px;
+    padding-top: 28px;
+    padding-bottom: 15px;
+    
     font-family: OpenSans;
     font-weight: 700;
     font-style: normal;
@@ -342,11 +347,12 @@
     margin: auto;
     position: relative;
     z-index: 2;
+    box-sizing: border-box;
+    
     padding-left: 4.6%;
     padding-right: 4.6%;
     padding-top: 31.2%;
     padding-bottom: 3%;
-    box-sizing: border-box;
   }
   
   .apps_footer {
@@ -379,19 +385,19 @@
     text-transform: uppercase;
   }
   
-  
   .logo {
+    display: block;
     width: 60px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 5px;
-    display: block;
     fill: #ffffff;
   }
   
   .logo_frame {
     margin-left: auto;
     margin-right: auto;
+    
     width: 71px;
     height: 75px;
     background-color: #7050cc;
@@ -410,7 +416,6 @@
     }
   }
   
-  
   @media (min-width: 641px) {
     .header_container {
       padding-left: 0; 
@@ -418,9 +423,12 @@
    }
     
     .appstore, .google_play {
+      margin-bottom: 15px;
+      margin-left: 0;
+      margin-right: 0;
+      
       height: 75px;
       width: 312px;
-      margin-bottom: 15px;
       border: 1px solid #5e42b0;
       border-radius: 50px;
     }
@@ -463,6 +471,14 @@
       border-radius: 2px;
     }
     
+    .card_title {
+      font-size: 80px;
+    }
+  
+    .card_text {
+      font-size: 24px;
+    }
+    
     .logo {
       width: 102px;
       margin-left: auto;
@@ -485,7 +501,6 @@
       padding-left: 0;
       padding-right: 0;
     }
-    
   }
   
   @media (min-width: 641px) and (max-width: 960px) {
@@ -560,11 +575,36 @@
     .connection_text, .collaboration_text, .athlets_growth_text, .players_growth_text {
       font-size: 18px;
     }
+    
+    .card_title {
+      padding-top: 9.2%;
+      padding-bottom: 1.6%;
+    }
+    
+    .card_content {
+      padding-left: 3.9%;
+      min-height: 335px;
+    }
+    
+    .number, .number_left {
+      width: 115px;
+      height: 115px;
+      top: 85%;
+    }
+  
+    .card_count {
+      top: 35px;
+      left: 40px;
+      font-size: 24px;
+    }
+  
+    .card_count::after {
+      width: 24px;
+    }
       
     .apps_text {
       font-size: 36px;  
     }
-      
   }
    
   @media (min-width: 961px) {
@@ -657,12 +697,55 @@
     }
     
     .card {
-      width: 50%;    
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    
+    .card_img {
+      position: relative;
+      width: 50%;
+    }
+    
+    .img_find_contact {
+      order: 1;
+    }
+    
+    .card_content {
+      width: 50%;
+      padding-left: 8%;
+      padding-right: 6.5%;
+      box-sizing: border-box;
+    }
+    
+    .card_title {
+      padding-bottom: 90px;
     }
     
     .number {
-      top: 20px;
-      left: -40px;
+      width: 168px;
+      height: 155px;
+      top: calc(50% - 77px);
+      left: calc(100% - 84px);
+    }
+    
+    .number_left {
+      position: absolute;
+      background-color: #5e42b0;
+      width: 168px;
+      height: 155px;
+      top: calc(50% - 77px);
+      left: -84px;
+    }
+  
+    .card_count {
+      top: calc(50% - 18px);
+      left: calc(50% - 12px);
+      font-size: 24px;
+    }
+  
+    .card_count::after {
+      width: 24px;
     }
     
     .footer_title {
@@ -695,7 +778,6 @@
   
     .logo_frame {
       margin: 0;
-  }
-    
+    }
   }
   
