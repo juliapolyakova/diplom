@@ -102,6 +102,10 @@
     background-color: #5e42b0;
     border-radius: 20px;
   }
+
+  .appstore:hover, .google_play:hover {
+    background-color: #7754df;
+  }
    
   .appstore_logo, .google_play_logo {
     position: absolute;
