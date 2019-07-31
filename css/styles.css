@@ -666,19 +666,32 @@
     .athlets_photo {
       position: absolute;
       right: 50%;
-      top: 0;
+      top: 20px;
     }
     
+    .footballer {
+      max-width: 550px;
+    }
+
     .players_photo {
       position: absolute;
-      top: 0;
+      top: 20px;
       right: 0;
     }
     
+    .basketballer {
+      max-width: 900px;
+    }
+
     .athlets, .players {
       position: relative;
       font-size: 20px;
     }
+
+    .athlets_title, .players_title {
+      padding: 5.8% 0 4%;
+    }
+
     
      .connection_title, .collaboration_title, .athlets_growth_title, .players_growth_title {
       margin-bottom: 1.6%;
