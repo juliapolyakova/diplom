@@ -61,6 +61,7 @@
 
     display: block;
     margin-top: 40.6%;
+    padding-left: 7%;
   }
   
   .header_title, .header_title_play {
@@ -151,6 +152,7 @@
     margin-left: auto;
     margin-right: auto;
     display: block;
+    text-align: center;
   }
   
   .athlets_title, .players_title {
@@ -662,6 +664,10 @@
       margin-bottom: 13%;
       margin-top: 7.8%;
     }
+
+    main {
+      font-size: 0;
+    }
     
     .athlets_photo {
       position: absolute;
@@ -691,7 +697,6 @@
     .athlets_title, .players_title {
       padding: 5.8% 0 4%;
     }
-
     
      .connection_title, .collaboration_title, .athlets_growth_title, .players_growth_title {
       margin-bottom: 1.6%;
